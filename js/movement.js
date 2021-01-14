@@ -1,35 +1,34 @@
-export function movementKey(objectToMove) {
+export function movementKey(objectToMove, square) {
   const d = document
-  let posX = 0
-  let posY = 0
-  let movementX = 0
-  let movementY = 0
-
+  let posX = 0,
+  posY = 0,
+  movementX = 0,
+  movementY = 0
+  
   document.addEventListener('keydown', e => {
-    console.log(e.key)
-    if (e.key === 'ArrowRight' && posX <= 508) {
+    const stageLimit = d.querySelector(square).getBoundingClientRect(),
+    ballLimit = d.querySelector(objectToMove).getBoundingClientRect()
+    if (e.key === 'ArrowRight' && ballLimit.right < (stageLimit.right - 15)) {
       posX += 15
       movementX = posX.toString() + '%'
       // d.querySelector(objectToMove).style.setProperty('left', movementX)
     }
 
-    if (e.key === 'ArrowLeft' && posX >= -508) {
+    if (e.key === 'ArrowLeft' && ballLimit.left > (stageLimit.left + 15)) {
       posX -= 15
       movementX = posX.toString() + '%'
       // d.querySelector(objectToMove).style.setProperty('left', movementX)
     }
 
-    if (e.key === 'ArrowUp'&& posY >= -238) {
+    if (e.key === 'ArrowUp'&& ballLimit.top > (stageLimit.top + 15)) {
       posY -= 15
       movementY = posY.toString() + '%'
-      console.log(movementY)
       // d.querySelector(objectToMove).style.setProperty('top', movementY)
     }
 
-    if (e.key === 'ArrowDown' && posY <= 238) {
+    if (e.key === 'ArrowDown' && ballLimit.bottom < (stageLimit.bottom - 15)) {
       posY += 15
       movementY = posY.toString() + '%'
-      console.log(movementY)
       // d.querySelector(objectToMove).style.setProperty('top', movementY)
     }
 
