@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <!-- Para evitar problemas con el inspector de chrome https://stackoverflow.com/questions/44679794/position-fixed-on-chrome-mobile-causing-element-to-move-on-scroll-up-down -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 minimum-scale=1">
+  <title>DOM - Ejercicios </title>
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="dist/hamburgers.css">
+  <link rel="stylesheet" href="dist/normalize.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header-title_container">
+      <h1 class="header-title">Ejercicios del DOM</h1>
+    </div>
+  </header>
+  <main class="main">
+    <div class="main-flex_section">
+      <section id="seccion1">
+        <h2>Seccion 1</h2>
+      </section>
+    </div>
+    <div class="main-flex_section">
+      <section id="seccion2">
+        <h2>Seccion 2</h2>
+      </section>
+    </div>
+    <div class="main-flex_section">
+      <section id="seccion3">
+        <h2>Seccion 3</h2>
+      </section>
+    </div>
+    <div class="main-flex_section">
+      <section id="seccion4">
+        <h2>Seccion 4</h2>
+      </section>
+    </div>
+    <div class="main-flex_section">
+      <section  id="seccion5">
+        <div class="section-flex">
+          <div class="title-flex">
+            <h2>Reloj y Alarma Digital</h2>
+          </div>
+          <div class="clock-flex">
+
+          </div>
+          <div class="btn-flex">
+            <button class="start-clock">Iniciar Reloj</button>
+            <button class="stop-clock">Detener Reloj</button>
+            <button class="start-alarm">Iniciar Alarma</button>
+            <button class="stop-alarm">Detener Alarma</button>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="main-flex_section">
+      <div class="movement-flex">
+        <h2>Movimiento</h2>
+        <div class="cuadro">
+          <div class="circulo">
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main-flex_container">
+      <nav class="menu">
+        <ul class="main-nav">
+          <li>
+            <a href="#seccion1">Seccion 1</a>
+          </li>
+          <li>
+            <a href="#seccion2">Seccion 2</a>
+          </li>
+          <li>
+            <a href="#seccion3">Seccion 3</a>
+          </li>
+          <li>
+            <a href="#seccion4">Seccion 4</a>
+          </li>
+          <li>
+            <a href="#seccion5">Seccion 5</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footer-menu_container">
+      <button class="hamburger hamburger--elastic" type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+    </div>
+    <h2>Hola Soy un Footer</h2>
+  </footer>
+  <script src="./js/index.js" type="module"></script>
+</body>
+</html>

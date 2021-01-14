@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan&display=swap');
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+/* Para fijar el footer con flex en el fondo */
+body{ 
+  display:flex; 
+  flex-direction:column; 
+}
+
+
+:root {
+  --yellow: #f0db4f;
+  --dark: #323330;
+}
+
+html {
+  font-family: 'Spartan', sans-serif;
+}
+
+.main-nav li a {
+  color: var(--yellow);
+  text-decoration: none;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header,
+.footer {
+  width: 100%;
+  height: auto;
+}
+
+.header {
+  background-color: var(--yellow);
+}
+
+.main {
+  width: auto;
+  height: auto;
+}
+
+.header-title_container,
+.footer-menu_container {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+}
+
+.header-title_container {
+  justify-content: center;
+}
+
+.footer-menu_container{
+  justify-content: flex-end;
+  position: absolute;
+
+}
+
+.main-flex_container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: -110%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease-in-out;
+}
+
+.main-nav {
+  height: 70%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-nav li {
+  font-size: 1.5em;
+  width: 100%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-nav li a:hover {
+  background-color: var(--yellow);
+  color: var(--dar);
+  transition: 0.65s;
+}
+
+.header-title {
+  margin: 0;
+}
+
+.toggle-menu {
+  left: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.main-flex_section {
+  width: 100%;
+  height: 40rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  background-color: var(--dark);
+  opacity: .8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Para fijar el footer con flex en el fondo */
+.footer {
+  margin-top:auto; 
+  height: 10vh;
+  text-align: center;
+  color: white;
+  background-color: var(--dark);
+}
+
+.footer-menu_container {
+  position: fixed;
+  z-index: 999;
+  width: auto;
+  height: auto;
+  bottom: 12px;
+  right: 12px;
+} 
+
+
+.section-flex,
+.movement-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.movement-flex {
+  width: 100%;
+  height: 100%;
+}
+
+.cuadro{
+  /* width: 70%;
+  height: 50%;
+  background-color: var(--dark); */
+  display: flex;
+  width: 70%;
+  min-height: 50vh;
+  background-color: var(--dark);
+}
+
+.circulo {
+  /* display: inline-block;
+  width: 45px;
+  height: 45px;
+  
+  background-color: var(--yellow);
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); */
+  margin: auto;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background-color: var(--yellow)
+}
