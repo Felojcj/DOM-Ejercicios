@@ -19,7 +19,7 @@ export function movementKey(objectToMove) {
       // d.querySelector(objectToMove).style.setProperty('left', movementX)
     }
 
-    if (e.key === 'ArrowUp'&& posY >= -235) {
+    if (e.key === 'ArrowUp'&& posY >= -238) {
       posY -= 15
       movementY = posY.toString() + '%'
       console.log(movementY)

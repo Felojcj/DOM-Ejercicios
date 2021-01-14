@@ -1,6 +1,7 @@
 import hamburgerMenu from './hamburger.js'
 import { clockAndAlarm, playAlarm } from './alarma.js'
 import  { movementKey, shortcuts } from './movement.js'
+import { countdown } from './countdown.js'
 
 /*La funcion necesita los atributos del botton hamburguesa, su contenedor y el menu
   ejemplo:
@@ -14,4 +15,6 @@ document.addEventListener('DOMContentLoaded', e => {
   playAlarm('assets/alarma.mp3','.start-alarm', '.stop-alarm')
   movementKey('.circulo')
   shortcuts()
+  // Elemento, fecha y mensaje a mostrar cuando se cumpla el tiempo
+  countdown('.countdown', 'Jan 14, 2021, 17:53:00', 'Cuenta Regresiva Completada')
 })
