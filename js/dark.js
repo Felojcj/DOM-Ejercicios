@@ -25,7 +25,6 @@ export function darkMode(btnDark, main, icon) {
   })
 
   d.addEventListener('DOMContentLoaded', e => {
-    console.log(ls.getItem('theme'))
     if (ls.getItem('theme') === null) localStorage.setItem('theme', 'light')
     if (ls.getItem('theme') === 'light') ligthMode()
     if (ls.getItem('theme') === 'dark') darkMode()
