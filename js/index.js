@@ -20,5 +20,5 @@ document.addEventListener('DOMContentLoaded', e => {
   // Elemento, fecha y mensaje a mostrar cuando se cumpla el tiempo
   countdown('.countdown', 'Jan 14, 2022, 23:59:59', 'Cuenta Regresiva Completada 😁😁😁🤣🤣')
   scrollTop('.footer-menu_container')
-  darkMode('.dark-mode-btn', '.main', '.fas')
 })
+darkMode('.dark-mode-btn', '.main', '.fas')
