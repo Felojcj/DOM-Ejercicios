@@ -5,6 +5,7 @@ import { countdown } from './countdown.js'
 import { scrollTop } from './scroll.js'
 import { darkMode } from './dark.js'
 import { responsiveDesignJS } from './responsive.js'
+import tester from './tester.js'
 
 /*La funcion necesita los atributos del botton hamburguesa, su contenedor y el menu
   ejemplo:
@@ -16,11 +17,14 @@ document.addEventListener('DOMContentLoaded', e => {
   hamburgerMenu('.hamburger', '.main-flex_container', '.menu')
   clockAndAlarm('.clock-flex','.start-clock', '.stop-clock')
   playAlarm('assets/alarma.mp3','.start-alarm', '.stop-alarm')
-  movementKey('.circulo', '.cuadro')
+  // movementKey('.circulo', '.cuadro')
   shortcuts()
   // Elemento, fecha y mensaje a mostrar cuando se cumpla el tiempo
   countdown('.countdown', 'Jan 14, 2022, 23:59:59', 'Cuenta Regresiva Completada 😁😁😁🤣🤣')
   scrollTop('.footer-menu_container')
+
+  // No funciona si el evento de movementKey esta activo !!
+  tester('main-form')
 })
 responsiveDesignJS('.video-container', '.map-container', '(min-width: 1024px)')
 darkMode('.dark-mode-btn', '.main', '.fas')

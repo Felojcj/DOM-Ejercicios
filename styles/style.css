@@ -245,3 +245,7 @@ html {
 body {
   text-align: center;
 }
+
+.submit {
+  margin: 10px 0 0;
+}
