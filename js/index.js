@@ -6,6 +6,7 @@ import { scrollTop } from './scroll.js'
 import { darkMode } from './dark.js'
 import { responsiveDesignJS } from './responsive.js'
 import tester from './tester.js'
+import userDeviceInfo from './deteccion_dispositivos.js'
 
 /*La funcion necesita los atributos del botton hamburguesa, su contenedor y el menu
   ejemplo:
@@ -25,6 +26,7 @@ document.addEventListener('DOMContentLoaded', e => {
 
   // No funciona si el evento de movementKey esta activo !!
   tester('main-form')
+  userDeviceInfo('user-device')
+  responsiveDesignJS('.video-container', '.map-container', '(min-width: 1024px)')
 })
-responsiveDesignJS('.video-container', '.map-container', '(min-width: 1024px)')
 darkMode('.dark-mode-btn', '.main', '.fas')
