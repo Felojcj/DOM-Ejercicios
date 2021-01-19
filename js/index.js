@@ -9,6 +9,7 @@ import tester from './tester.js'
 import userDeviceInfo from './deteccion_dispositivos.js'
 import networkStatus from './estado_red.js'
 import camera from './camara.js'
+import geolocation from './geolocation.js'
 
 /*La funcion necesita los atributos del botton hamburguesa, su contenedor y el menu
   ejemplo:
@@ -32,5 +33,6 @@ document.addEventListener('DOMContentLoaded', e => {
   userDeviceInfo('user-device')
   networkStatus('user-network')
   camera('video')
+  geolocation('map')
 })
 darkMode('.dark-mode-btn', '.main', '.fas')

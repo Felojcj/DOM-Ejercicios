@@ -10,7 +10,6 @@ export default function camera(id) {
     })
 
     p.catch(function(err) {
-      console.log(err)
       $video.insertAdjacentHTML('beforebegin', `<p><mark>${err.message}</mark></p>`)
     })
   }
