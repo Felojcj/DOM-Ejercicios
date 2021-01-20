@@ -93,7 +93,7 @@
       </section>
     </div>
     <div class="main-flex_section">
-      <section>
+      <section id="ddispositivo">
         <h2>Deteccion de Dispositivos</h2>
         <div id="user-device">
           
@@ -101,7 +101,7 @@
       </section>
     </div>
     <div class="main-flex_section net-container">
-      <section class="sect-net">
+      <section class="sect-net" id="netstatusdetector">
         <h2>Deteccion del Estado de Conexion</h2>
         <div id="user-network">
 
@@ -109,7 +109,7 @@
       </section>
     </div>
     <div class="main-flex_section">
-      <section>
+      <section id="camara">
         <h2>Decteccion de Camara</h2>
         <video id="video" autoplay></video>
       </section>
@@ -155,20 +155,46 @@
       </section>
     </div>
     <div class="main-flex_section">
-      <section id="localizacion">
+      <section id="sorteodigital">
         <h2>Sorteo Digital</h2>
         <ul id="sorteo">
-          <li>JavaScript</li>
-          <li>PHP</li>
-          <li>Java</li>
-          <li>C</li>
-          <li>Python</li>
-          <li>Ruby</li>
-          <li>Go</li>
-          <li>Visual Basic</li>
-          <li>Rust</li>
-          <li>Perl</li>
+          <li class="list-element">JavaScript</li>
+          <li class="list-element">PHP</li>
+          <li class="list-element">Java</li>
+          <li class="list-element">C</li>
+          <li class="list-element">Python</li>
+          <li class="list-element">Ruby</li>
+          <li class="list-element">Go</li>
+          <li class="list-element">Visual Basic</li>
+          <li class="list-element">Rust</li>
+          <li class="list-element">Perl</li>
         </ul>
+        <button id="draw">Sortear</button>
+      </section>
+    </div>
+    <div class="main-flex_section">
+      <section id="rslider">
+        <h2>Responsive Slider</h2>
+        <div class="slider">
+          <div class="slider-slides">
+            <div class="slider-slide active">
+              <img src="https://placeimg.com/400/400/animals" alt="animals">
+            </div>
+            <div class="slider-slide">
+              <img src="https://placeimg.com/400/400/any" alt="any">
+              </div>
+            <div class="slider-slide">
+              <img src="https://placeimg.com/400/400/arch" alt="arc">
+            </div>
+            <div class="slider-slide">
+              <img src="https://placeimg.com/400/400/nature" alt="nature">
+            </div>
+          </div>
+          <div class="slider-btns">
+            <a href="#" class="prev">&laquo;</a>
+            <a href="#" class="next">&raquo;</a>
+          </div>
+        </div>
       </section>
     </div>
     <div class="main-flex_container">
@@ -202,13 +228,25 @@
             <a href="#rtester">Responsive Tester</a>
           </li>
           <li>
-            <a href="#rtester">Responsive Tester</a>
+            <a href="#ddispositivo">Deteccion de Dispositivos</a>
+          </li>
+          <li>
+            <a href="#netstatusdetector">Deteccion de Estado de la Red</a>
+          </li>
+          <li>
+            <a href="#camara">Camara</a>
           </li>
           <li>
             <a href="#localizacion">Localizacion</a>
           </li>
           <li>
             <a href="#filtro">Filtro de Busqueda</a>
+          </li>
+          <li>
+            <a href="#sorteodigital">Sorteo Digital</a>
+          </li>
+          <li>
+            <a href="#rslider">Responsive Slider</a>
           </li>
         </ul>
       </nav>

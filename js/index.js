@@ -11,6 +11,8 @@ import networkStatus from './estado_red.js'
 import camera from './camara.js'
 import geolocation from './geolocation.js'
 import seachFilter from './filtro_busquedas.js'
+import giveaway from './sorteo.js'
+import responsiveSlider from './responsive_slider.js'
 
 /*La funcion necesita los atributos del botton hamburguesa, su contenedor y el menu
   ejemplo:
@@ -33,8 +35,10 @@ document.addEventListener('DOMContentLoaded', e => {
   tester('main-form')
   userDeviceInfo('user-device')
   networkStatus('user-network')
-  camera('video')
-  geolocation('map')
+  // camera('video')
+  // geolocation('map')
   seachFilter('.card-filter', '.card')
+  giveaway('.list-element', 'draw', 'sorteo')
+  responsiveSlider('.slider-slide', '.prev', '.next')
 })
 darkMode('.dark-mode-btn', '.main', '.fas')
