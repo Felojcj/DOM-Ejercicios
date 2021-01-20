@@ -124,7 +124,6 @@ html {
 
 /* Para fijar el footer con flex en el fondo */
 .footer {
-  margin-top:auto; 
   height: 10vh;
   text-align: center;
   color: white;
@@ -275,4 +274,39 @@ body {
 .online p,
 .offline p {
   margin: 0;
+}
+
+.filtro {
+  width: 100%;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.card {
+  background-color: var(--dark);
+  color: var(--yellow);
+  transition: all 0.3s ease-out;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card figcaption {
+  padding: 1rem;
+}
+
+.filter {
+  height: auto;
+}
+
+.no-search {
+  /* display: none; */
+  visibility: hidden;
+  opacity: 0;
+  order: 1;
 }
