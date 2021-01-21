@@ -15,6 +15,7 @@ import giveaway from './sorteo.js'
 import responsiveSlider from './responsive_slider.js'
 import menuObserver from './menu_observer.js'
 import videoSpy from './video_observer.js'
+import validate from './form_validation.js'
 
 /*La funcion necesita los atributos del botton hamburguesa, su contenedor y el menu
   ejemplo:
@@ -44,5 +45,6 @@ document.addEventListener('DOMContentLoaded', e => {
   responsiveSlider('.slider-slide', '.prev', '.next')
   menuObserver('.main')
   videoSpy('.video-green')
+  validate()
 })
 darkMode('.dark-mode-btn', '.main', '.fas')
