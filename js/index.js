@@ -14,6 +14,7 @@ import seachFilter from './filtro_busquedas.js'
 import giveaway from './sorteo.js'
 import responsiveSlider from './responsive_slider.js'
 import menuObserver from './menu_observer.js'
+import videoSpy from './video_observer.js'
 
 /*La funcion necesita los atributos del botton hamburguesa, su contenedor y el menu
   ejemplo:
@@ -42,5 +43,6 @@ document.addEventListener('DOMContentLoaded', e => {
   giveaway('.list-element', 'draw', 'sorteo')
   responsiveSlider('.slider-slide', '.prev', '.next')
   menuObserver('.main')
+  videoSpy('.video-green')
 })
 darkMode('.dark-mode-btn', '.main', '.fas')

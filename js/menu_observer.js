@@ -3,7 +3,6 @@ export default function menuObserver() {
     entries.forEach(entry => {
       const id = entry.target.getAttribute('id')
       if (entry.isIntersecting) {
-        console.log(id)
         d.querySelector(`a[href="#${id}"][data-scroll-spy]`).classList.add('active-menu')
       } else {
         d.querySelector(`a[href="#${id}"][data-scroll-spy]`).classList.remove('active-menu')

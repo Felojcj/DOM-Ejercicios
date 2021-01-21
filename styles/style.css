@@ -453,3 +453,7 @@ body {
     transition: 0.65s;
   }
 }
+
+.video-green {
+  max-width: 80%;
+}
