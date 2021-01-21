@@ -13,6 +13,7 @@ import geolocation from './geolocation.js'
 import seachFilter from './filtro_busquedas.js'
 import giveaway from './sorteo.js'
 import responsiveSlider from './responsive_slider.js'
+import menuObserver from './menu_observer.js'
 
 /*La funcion necesita los atributos del botton hamburguesa, su contenedor y el menu
   ejemplo:
@@ -40,5 +41,6 @@ document.addEventListener('DOMContentLoaded', e => {
   seachFilter('.card-filter', '.card')
   giveaway('.list-element', 'draw', 'sorteo')
   responsiveSlider('.slider-slide', '.prev', '.next')
+  menuObserver('.main')
 })
 darkMode('.dark-mode-btn', '.main', '.fas')

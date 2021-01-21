@@ -36,8 +36,6 @@ html {
 .header,
 .footer {
   width: 100%;
-  height: auto;
-  z-index: 997;
 }
 
 .header {
@@ -121,6 +119,7 @@ html {
   align-items: center;
   justify-content: center;
   overflow-y: auto;
+  z-index: 1;
 }
 
 /* Para fijar el footer con flex en el fondo */
@@ -381,4 +380,76 @@ body {
 
 .slider a:hover {
   color: #4d4d4d;
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 10vh auto 10vh;
+    grid-template-areas: 
+      "header header"
+      "main aside"
+      "footer footer";
+  }
+  
+  .header {
+    grid-area: header;
+  }
+  
+  .main {
+    grid-area: main;
+  }
+
+  .aside {
+    grid-area: aside;
+    position: sticky;
+  }
+
+  .footer {
+    grid-area: footer;
+  }
+  
+  .panel-btn {
+    display: none;
+  }
+
+  .main-flex_container {
+    position: sticky;
+    height: inherit;
+    top: 0;
+    left: 0;
+    display: inline-block;
+  }
+
+  .menu {
+    position: sticky;
+    width: auto;
+  }
+
+  .main-nav {
+    position: sticky;
+  }
+
+  .main-nav li {
+    height: 4rem;
+  }
+
+  .main-nav li a {
+    justify-content: flex-end;
+    text-align: right;
+    font-size: 1rem;
+    padding: 0.75rem;
+  }
+
+  .footer-menu_container {
+    right: initial;
+    left: calc(4.5rem + 1vw);
+  }
+
+  .main-nav li a.active-menu {
+    background-color: var(--yellow);
+    color: var(--dar);
+    transition: 0.65s;
+  }
 }

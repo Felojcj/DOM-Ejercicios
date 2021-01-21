@@ -25,7 +25,6 @@ const previusSlide = contentToSlide => {
   }
 }
 
-
 export default function responsiveSlider(slideContent, prev, next) {
   d.addEventListener('click', e => {
     const $contentToSlide = d.querySelectorAll(slideContent)
