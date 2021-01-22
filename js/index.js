@@ -16,6 +16,7 @@ import responsiveSlider from './responsive_slider.js'
 import menuObserver from './menu_observer.js'
 import videoSpy from './video_observer.js'
 import validate from './form_validation.js'
+import speach from './narrador.js'
 
 /*La funcion necesita los atributos del botton hamburguesa, su contenedor y el menu
   ejemplo:
@@ -35,7 +36,7 @@ document.addEventListener('DOMContentLoaded', e => {
 
   // No funciona si el evento de movementKey esta activo !!
   responsiveDesignJS('.video-container', '.map-container', '(min-width: 1024px)')
-  tester('main-form')
+  // tester('main-form')
   userDeviceInfo('user-device')
   networkStatus('user-network')
   // camera('video')
@@ -45,6 +46,7 @@ document.addEventListener('DOMContentLoaded', e => {
   responsiveSlider('.slider-slide', '.prev', '.next')
   menuObserver('.main')
   videoSpy('.video-green')
-  validate()
+  // validate()
+  speach('.form-speech', '.sp-opt')
 })
 darkMode('.dark-mode-btn', '.main', '.fas')

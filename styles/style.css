@@ -548,3 +548,22 @@ body {
     opacity: 1;
   }
 }
+
+.form-speech {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+.form-speech > * {
+  padding: 0.5rem;
+  margin: 1rem auto;
+  display: block;
+  width: 100%;
+}
+
+.form-speech input[type="submit"] {
+  width: 50%;
+  font-weight: bold;
+  cursor: pointer;
+}

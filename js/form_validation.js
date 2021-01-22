@@ -18,7 +18,6 @@ export default function validate() {
 
       if (pattern && $input.value !== '') {
         const regex = new RegExp(pattern)
-        console.log(regex.exec($input.value))
         return !regex.exec($input.value)
           ? d.getElementById($input.name).classList.add('is-active')
           : d.getElementById($input.name).classList.remove('is-active')
@@ -34,7 +33,17 @@ export default function validate() {
 
   d.addEventListener('submit', e => {
     if (e.target === $form) {
-      
+      const $loader = d.querySelector('.contact-form_loader'),
+      $response = d.querySelector('.contact-form_response')
+
+      $loader.classList.remove('none')
+
+      setTimeout(() => {
+        $loader.classList.add('none')
+        $response.classList.remove('none')
+        $form.reset()
+        setTimeout(() => $response.classList.add('none'), 3000)
+      }, 3000)
     }
   })
 }

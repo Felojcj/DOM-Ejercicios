@@ -73,6 +73,9 @@
           <li>
             <a href="#formvalidation" data-scroll-spy>Validacion de Formularios</a>
           </li>
+          <li>
+            <a href="#narrador" data-scroll-spy>Narrador</a>
+          </li>
         </ul>
       </nav>
     </div>
@@ -268,7 +271,7 @@
     <div class="main-flex_section">
       <section id="formvalidation" class="sect-validation" data-scroll-spy> 
         <h2>Validacion de Formularios</h2>
-        <form id="validation-form" class="v-form">
+        <form action="https://formsubmit.co/your@mail.com" id="validation-form" class="v-form" method="POST">
           <input type="text" name="nombre" id="name" placeholder="Escribe tu nombre" required title="Solo acepta letras y espacios en blanco" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$">
           <input type="email" name="correo" id="email" placeholder="Escribe tu email" required title="Email Incorrecto" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$">
           <input type="text" name="asunto" id="subject" placeholder="Escribe tu asunto" required title="El asunto es requerido">
@@ -280,6 +283,16 @@
           <div class="contact-form_response none">
             <p>Los datos han sido enviados</p>
           </div>
+        </form>
+      </section>
+    </div>
+    <div class="main-flex_section">
+      <section id="narrador" class="sect-validation" data-scroll-spy> 
+        <h2>Narrador</h2>
+        <form class="form-speech" id="speech-form">
+          <input type="text" class="txt" required>
+          <select id="speech-opt" class="sp-opt"></select>
+          <input type="submit" value="Hablar">
         </form>
       </section>
     </div>
